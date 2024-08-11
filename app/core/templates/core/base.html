@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar" style="background-color: #3f3f3f;">
+        <div class="container-fluid">
+            <a class="btn btn-danger" href="/">
+                <img src="/static/img/logo.png" alt="Logo" width="65" height="35" class="d-inline-block align-text-centr">
+                Домашка
+            </a>
+            <a href="/author/" class="btn btn-info">Писатели</a>
+            <a href="/top/" class="btn btn-info">Топ Лучших книг</a>
+        </div>
+        
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

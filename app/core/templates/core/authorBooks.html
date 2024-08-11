@@ -1,0 +1,14 @@
+{% extends "core/base.html" %}
+{%block body%}
+
+<h1 style="text-align: center;">{{ author }}</h1>
+<hr>
+<div style="text-align: center;">
+
+        {% for book in books %}
+            <p >{{ book.books }}</a>  
+        {% endfor %}
+   
+</div>
+
+{%endblock%}

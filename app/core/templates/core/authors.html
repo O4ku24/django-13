@@ -1,0 +1,21 @@
+{% extends "core/base.html" %}
+{%block body%}
+
+
+<div>
+    
+    <div style="text-align: right;"><a class="btn btn-primary" href="add_authors/">Добавить Автора</a></div>
+</div> 
+
+<div style="text-align: center;">
+<p>
+    <div style="text-align: center;" ><h1>Писатели</h1></div>
+    {% for author in authors %}
+        <a style="text-align: center;" class="btn btn-danger" href="http://127.0.0.1:8000/authors/{{ author }}">{{ author }}</a>  
+    {% endfor %}
+</p> 
+</div>
+             
+    
+
+{%endblock%}

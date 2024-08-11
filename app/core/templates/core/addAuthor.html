@@ -1,0 +1,14 @@
+{% extends "core/base.html" %}
+{%block body%}
+
+
+    <h1 style="text-align: center; color: rgb(0, 0, 0);">Add Authors</h1>
+
+    <form method="post" action='/author/add_authors/' style="text-align: center;">
+        {% csrf_token %}
+        <p>New Author:<br /> <input name="newAuthor" type="text" /></p>
+        <p>Book:<br /> <input name="newbook" type="text" /></p>
+        <input type="submit" value="Add">
+    </form>        
+    
+{%endblock%} 
